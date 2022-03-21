@@ -1,0 +1,11 @@
+type (
+	OrderReq {
+		Current  int64  `json:"Current,default=1,optional"`
+		PageSize int64  `json:"PageSize,default=10,optional"`
+		Id       string `json:"Id"`
+	}
+)
+service order {
+	@handler getOrder
+	get /api/order (OrderReq)
+}

@@ -2,7 +2,7 @@
 package types
 
 type OrderReq struct {
-	Current  int64  `json:"Current,default=1,optional"`
-	PageSize int64  `json:"PageSize,default=10,optional"`
-	Id       string `json:"Id"`
+	Current  int64  `json:"current,default=1,optional"`
+	PageSize int64  `json:"page_size,default=10,optional"`
+	Id       string `json:"id"`
 }
